@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+</head>
+
+<body>
+    <h1>Tarefas</h1>
+
+    <script>
+        let tarefas = ["7:30-acordar", "8:00-tomar banho", "8:30-escovar os dentes", "9:30-tomar café", "10:00-limpar a casa", "11:00-fazer almoço", "12:00-lavar a louça"];
+        console.log(`Minha primeira tarefa é ${tarefas[0]}`);
+
+        let numtarefa = [7];
+        numtarefa.length
+        console.log(`Temos ${numtarefa} tarefas pendentes`);
+
+        let tarefaurgente = ["13:00-estender a roupa"];
+        tarefas.push("13:00-estender a roupa");
+        console.log(`Adicionei uma nova tarefa: ${tarefaurgente}`);
+
+        tarefas.shift("7:30-acordar");
+        console.log(`Removi uma tarefa, agora restam: ${tarefas}`);
+
+        tarefas.sort()
+        console.log(`Tarefas em ordem crescente ${tarefas}`);
+
+        let ultimatarefa = ["12:00-lavar a louça"];
+        tarefas.pop()
+        console.log(`Conclui a ultima tarefa: ${ultimatarefa}`);
+
+        let tarefameio = ["9:30-tomar café"];
+        tarefas.pop()
+        console.log(`Conclui uma tarefa: ${tarefameio}`);
+
+    </script>
+</body>
+
+</html>

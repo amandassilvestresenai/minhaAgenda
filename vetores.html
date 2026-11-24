@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com VETORES</title>
+</head>
+<body>
+    <h1>Trabalhando com VETORES</h1>
+
+    <script>
+        let num = [5, 2, 8, 9, 3];
+        console.log(`Nosso vetor é ${num}`);
+        console.log(`O primeiro valor do vetor é ${num[0]}`);
+
+        //Para acrescentar o valor no vetor (precisa saber quantas posições existem no vetor)
+        num[5] = 6;
+        console.log(num);
+
+        //Atributo utilizado para adicionar valor no vetor, onde não prcisamos nos preocupar com a extensão.
+        num.push(67);
+        console.log(num);
+
+        //Atributo para saer o comprimento do nosso vetor (array).
+        num.length
+        console.log(`O vetor tem ${num.length} posições`);
+
+        //Podemos colocar o vetor em ordem crescente
+        num.sort()
+        console.log(`Vetor em ordem crescente ${num}`);
+
+
+    </script>
+
+</body>
+</html>
